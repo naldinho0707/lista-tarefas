@@ -70,7 +70,7 @@ function TodoList(){
                     {
                         lista.length < 1
                         ?
-                        <img className="icone-central" src={Icone} alt="" />
+                        <img className="icone-central" src="/src/assets/icon.png" alt="" />
                         :
                         lista.map((item, index) => (
                             <div
