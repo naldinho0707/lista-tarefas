@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: #222435;
+    font-family: 'roboto', sans-serif;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* tirar linha de marcação dos inputs */
+*:focus{
+    outline: none;
+}
+
+.alinhar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+
+h1{
+    font-weight: 900;
+    color: #7d83b9;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.icone-central{
+    width: 70%;
+    /* background-color: red; */
+}
+
+form{
+    width: 600px;
+    margin-bottom: 60px;
+    /* background-color: aqua; */
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+}
+
+form label{
+    flex-basis: 100%;
+    color: #7d83b9;
+    padding-bottom: 5px;
+}
+
+form input{
+    flex: 0.9;
+    height: 35px;
+    border-radius: 8px;
+    background-color: #2d3046;
+    padding: 0 0 0 10px;
+    font-size: 16px;
+    color: white;
+
+}
+
+form button{
+    flex: 0.1;
+    border-radius: 5px;
+    background-color: #363b65;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover{
+   background-color: #363f88;
+   
+}
+
+.lista-tarefas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+}
+
+.lista-tarefas button{
+    background-color: #4d506e;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+}
+
+.lista-tarefas button:hover{
+    background-color: red;
+ 
+}
+
+/* Botão deletar todas tarefas */
+.deletar-todas{
+    border: 1px solid red;
+    background-color: #363b65;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    font-weight:bold;
+    font-size: 16px;
+    width: 100%;
+}
+
+.deletar-todas:hover{
+    border: 2px solid white;
+    background-color: red;
+}
+
+
+.item{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #363b65;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.item:hover{
+    background-color: #151627;
+    
+}
+
+.item span{
+    color: white;
+    /* background-color: red; */
+    /* margin-right: 10px; */
+    padding: 10px 15px;
+}
+
+
+
+.item-completo{
+    /* background-color: rgb(207, 230, 123); */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #363b65;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.item-completo:hover{
+    background-color: #151627;
+}
+
+
+.item-completo span{
+    color: #4d506e;
+    /* background-color: red; */
+    /* margin-right: 10px; */
+    padding: 10px 15px;
+    text-decoration: line-through;
+}
+
+
+@media screen and (max-width: 900px){
+
+    form{
+        width: 100%;
+    }
+
+    .lista-tarefas{
+        width: 100%;
+    }
+}
